@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'game-control';
+  evens = [];
+  odds = [];
+
+  getnumber(event){
+    if(event%2 == 0){
+      this.evens.push(event)
+    }else{
+      this.odds.push(event)
+    }
+  }
 }
